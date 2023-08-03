@@ -1,0 +1,76 @@
+@import url();
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --HEADING-FONT: 'Poppins';
+}
+
+body {
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 400;
+    height: 100vh;
+    color: whitesmoke;
+    background: url(images/bg-desktop.svg) hsl(257, 40%, 49%);
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    padding: 2rem 12rem 3rem;
+}
+
+.mockup img {
+    width: 80%;
+    margin-left: 6rem;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin: 2rem 2rem 10rem;
+}
+
+h2 {
+    font-family: var(--HEADING-FONT), sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.text-content a {
+    width: 30%;
+    cursor: pointer;
+ background-color:white;
+ color: hsl(257, 40%, 49%);
+ padding: 1rem;
+ border-radius: 2rem;
+ text-align: center;
+}
+
+.text-content a:active {
+
+}
+
+a:active {
+    color: hsl(300, 69%, 71%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
