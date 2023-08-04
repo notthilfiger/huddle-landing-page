@@ -1,76 +1,149 @@
 @import url();
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --HEADING-FONT: 'Poppins';
+  --HEADING-FONT: "Poppins";
 }
 
 body {
-    font-family: 'Open Sans', sans-serif ;
-    font-weight: 400;
-    height: 100vh;
-    color: whitesmoke;
-    background: url(images/bg-desktop.svg) hsl(257, 40%, 49%);
-    overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: whitesmoke;
+  background: url(images/bg-desktop.svg) hsl(257, 40%, 49%);
+  overflow: hidden;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
-    padding: 2rem 12rem 3rem;
+  margin: 2rem;
+  padding-left: 2rem;
 }
 
 .mockup img {
-    width: 80%;
-    margin-left: 6rem;
+  width: 80%;
+  margin-left: 6rem;
 }
 
 .text-content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    margin: 2rem 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 1rem 10rem;
 }
 
 h2 {
-    font-family: var(--HEADING-FONT), sans-serif;
-    font-size: xx-large;
-    font-weight: 600;
-    line-height: 1.5;
-    margin-top: 1rem;
+  font-family: var(--HEADING-FONT), sans-serif;
+  font-size: xx-large;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 1rem;
+  white-space: nowrap;
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
+  white-space: nowrap
 }
 
 .text-content a {
-    width: 30%;
-    cursor: pointer;
- background-color:white;
- color: hsl(257, 40%, 49%);
- padding: 1rem;
- border-radius: 2rem;
- text-align: center;
+  width: 30%;
+  cursor: pointer;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
 }
 
-.text-content a:active {
-
+.text-content a:visited {
+    background-color: white;
 }
 
-a:active {
-    color: hsl(300, 69%, 71%);
+.text-content a:hover, a:active {
+    background-color: hsl(300, 69%, 71%);
+    color: whitesmoke;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive screens  */
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (min-width: 600px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+       
+    header {
+        padding-left: 3rem;
+    }
+
+    .text-content {
+        width: 40%;
+        font-size: 0.75rem;
+        padding-top: 1rem;
+    }
+
+    .text-content a{
+        width: 25%;
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    .mockup img {
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    header {
+        padding-left: 3rem;
+    }
+    .text-content {
+        width: 50%;
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    .text-content a{
+        width: 25%;
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    .mockup img {
+        padding-bottom: 5rem;
+    }
+}
